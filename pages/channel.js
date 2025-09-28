@@ -1,3 +1,4 @@
+// pages/channel.js
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
@@ -9,6 +10,7 @@ export default function Channel() {
 
   useEffect(() => {
     if (channelid) {
+      // API呼び出しを/api/channel/:channelidに修正
       fetch(`/api/channel/${channelid}`)
         .then(res => res.json())
         .then(data => {
@@ -61,4 +63,4 @@ export default function Channel() {
       </div>
     </div>
   );
-}
+            }
