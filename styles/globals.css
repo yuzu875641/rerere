@@ -1,0 +1,55 @@
+/* グローバルスタイル */
+body {
+  background-color: #181818;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* チャンネルアイコンのスタイル */
+.channel-icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* 検索バーのスタイル */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #3d3d3d;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
