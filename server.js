@@ -103,7 +103,15 @@ app.prepare().then(() => {
       res.status(500).json({ error: error.message });
     }
   });
-
+　server.get('/api/channel/:channelId', async (req, res) => {
+  try {
+    const channelInfo = await fetchFromInvidious(`/api/v1/channels/${req.params.channelId}`);
+    res.json(channelInfo);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+  
   // Next.jsのページルーティング
   server.all('*', (req, res) => {
     return handle(req, res);
